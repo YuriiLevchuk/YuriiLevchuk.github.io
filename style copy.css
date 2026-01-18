@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: #ccc;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* keep h2 even if HTML uses h3 */
+.hero h2,
+.hero h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* SECTIONS */
+.about,
+.services,
+.blog,
+.portfolio,
+.contact {
+    padding: 40px 20px;
+}
+
+/* CARDS (shared look preserved) */
+.services .service,
+.blog article,
+.portfolio .project {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* FORM */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* IMAGES – SAFE DEFAULT */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HERO IMAGE – VISUAL UNCHANGED */
+.hero img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* BLOG IMAGES – NO EXTRA EFFECTS */
+.blog article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* BLOG TEXT SPACING (matches original padding look) */
+.blog article h3,
+.blog article p,
+.blog article a {
+    margin-bottom: 10px;
+}
+
+.blog article a {
+    color: #15a2ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog article a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
